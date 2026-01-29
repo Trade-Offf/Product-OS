@@ -6,20 +6,20 @@
 Product-OS/
 │
 ├── 📁 .cursor/                           # Cursor配置目录
-│   ├── skills/                            → AI技能库
-│   │   ├── Core_Flow/                     → 核心工作流技能
-│   │   │   ├── 01-需求拆解.md              → 拆解原始需求为结构化工作台
-│   │   │   └── 02-PRD生成.md               → 融合决策生成正式PRD文档
-│   │   └── Optional_Tools/                → 可选增强工具
-│   │       ├── 01-后台界面生成.md          → 生成后台管理界面HTML
-│   │       ├── 02-Mermaid流程图.md         → 绘制Mermaid流程图
-│   │       └── 03-评审模拟.md              → 模拟多角色需求评审
-│   └── .cursorrules                       → 全局工作规则配置
+│   └── skills/                            → AI技能库
+│       ├── Core_Flow/                     → 核心工作流技能
+│       │   ├── 01-需求拆解.md              → 拆解原始需求为结构化工作台
+│       │   └── 02-PRD生成.md               → 融合决策生成正式PRD文档
+│       ├── Optional_Tools/                → 可选增强工具
+│       │   ├── 01-后台界面生成.md          → 生成后台管理界面HTML
+│       │   ├── 02-Mermaid流程图.md         → 绘制Mermaid流程图
+│       │   └── 03-评审模拟.md              → 模拟多角色需求评审
+│       ├── ROUTER.md                      → 技能路由表（触发词管理）
+│       ├── VERSION_GUIDE.md               → PRD版本化规则指南
+│       └── WORKSHEET_STATE_GUIDE.md       → 工作台状态管理指南
 │
 ├── 📁 01_Input/                          # 需求入口（格式随意）
-│   ├── *.pdf                              → 原始需求文档
-│   ├── *.md                               → Markdown需求文档
-│   └── converted/                         → PDF预处理后的输出目录
+│   └── *.md                               → Markdown需求文档
 │
 ├── 📁 02_Process/                        # AI加工区（中间产物）
 │   ├── _WORK_SHEET.md                     → 需求拆解工作台（PM填写待确认问题）
@@ -31,10 +31,10 @@ Product-OS/
 │   └── preview_*.html                     → UI草图预览
 │
 ├── 📁 scripts/                           # 工具脚本
-│   ├── auto-convert.sh                    → PDF自动转换监控脚本
-│   ├── doc-converter.py                   → 文档转换器（PDF/Word→Markdown）
+│   ├── clean_workspace.sh                 → 清除工作区脚本
 │   └── README.md                          → 脚本使用说明
 │
+├── .cursorrules                          → 全局工作规则配置（项目根目录）
 ├── _WORK_SHEET.md                        → 当前需求的工作台（核心文件）
 └── README.md                             → 项目说明文档
 
@@ -97,5 +97,4 @@ Step 6: 生成交付物（可选）
 
 | 操作           | 命令                           | 说明                         |
 | :------------- | :----------------------------- | :--------------------------- |
-| **PDF预处理**  | `./scripts/auto-convert.sh`    | PDF转Markdown+提取图片       |
 | **清除工作区** | `./scripts/clean_workspace.sh` | 删除所有工作文件（不可恢复） |
