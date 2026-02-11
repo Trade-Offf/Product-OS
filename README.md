@@ -8,12 +8,8 @@ Product-OS/
 ├── 📁 .cursor/                           # Cursor配置目录
 │   └── skills/                            → AI技能库
 │       ├── Core_Flow/                     → 核心工作流技能
-│       │   ├── 01-需求拆解.md              → 拆解原始需求为结构化工作台
+│       │   ├── 01-需求整理.md              → 整理原始需求为结构化工作台
 │       │   └── 02-PRD生成.md               → 融合决策生成正式PRD文档
-│       ├── Optional_Tools/                → 可选增强工具
-│       │   ├── 01-后台界面生成.md          → 生成后台管理界面HTML
-│       │   ├── 02-Mermaid流程图.md         → 绘制Mermaid流程图
-│       │   └── 03-评审模拟.md              → 模拟多角色需求评审
 │       ├── ROUTER.md                      → 技能路由表（触发词管理）
 │       ├── VERSION_GUIDE.md               → PRD版本化规则指南
 │       └── WORKSHEET_STATE_GUIDE.md       → 工作台状态管理指南
@@ -22,13 +18,10 @@ Product-OS/
 │   └── *.md                               → Markdown需求文档
 │
 ├── 📁 02_Process/                        # AI加工区（中间产物）
-│   ├── _WORK_SHEET.md                     → 需求拆解工作台（PM填写待确认问题）
-│   ├── diagram_*.md                       → Mermaid流程图（状态/上传/分享/管理）
-│   └── review_report.md                   → 需求评审报告（后端/前端/QA视角）
+│   └── _WORK_SHEET.md                     → 需求拆解工作台（PM填写待确认问题）
 │
 ├── 📁 03_Output/                         # 交付物（正式文档）
-│   ├── PRD_Product_Spec.md                → 产品需求文档（最终版）
-│   └── preview_*.html                     → UI草图预览
+│   └── PRD_Product_Spec.md                → 产品需求文档（最终版）
 │
 ├── 📁 scripts/                           # 工具脚本
 │   ├── clean_workspace.sh                 → 清除工作区脚本
@@ -56,40 +49,14 @@ Step 3: PRD生成 [核心]
   → 对 AI 说："生成文档"或"生成PRD"
   → 产出：03_Output/PRD_Product_Spec.md
   → 得到逻辑闭环的最终需求文档
-
-<!-- 非核心操作，可以不要 -->
-Step 4: 流程可视化（可选）
-  → 对 AI 说："画个流程图"
-  → 产出：02_Process/diagram_*.md
-
-Step 5: 需求评审（可选）
-  → 对 AI 说："评审一下"
-  → 产出：02_Process/review_report.md
-  → 按评审意见补充缺失点
-
-Step 6: 生成交付物（可选）
-  → 对 AI 说："画后台"（如需 HTML 预览）
-  → 产出：03_Output/preview_*.html
 ```
 
 ## ⚡️ 常用指令 (输入 @ 呼叫)
 
-### 🔥 核心链路
-
-| 动作        | 指令 (Skill)   | 产出位置                         |
-| :---------- | :------------- | :------------------------------- |
-| **拆逻辑**  | `@01-需求拆解` | -> \_WORK_SHEET.md               |
-| **生成PRD** | `@02-PRD生成`  | -> 03_Output/PRD_Product_Spec.md |
-
-### 🛠️ 可选工具
-
-| 动作         | 指令 (Skill)        | 产出位置        |
-| :----------- | :------------------ | :-------------- |
-| **画后台**   | `@01-后台界面生成`  | -> 03_Output    |
-| **画流程**   | `@02-Mermaid流程图` | -> Mermaid 代码 |
-| **模拟评审** | `@03-评审模拟`      | -> 风险清单     |
-
----
+| 动作         | 指令 (Skill)   | 产出位置                         |
+| :----------- | :------------- | :------------------------------- |
+| **整理需求** | `@01-需求整理` | -> \_WORK_SHEET.md               |
+| **生成PRD**  | `@02-PRD生成`  | -> 03_Output/PRD_Product_Spec.md |
 
 ---
 
