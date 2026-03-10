@@ -1,26 +1,23 @@
-# Product-OS 工具脚本
+# 工具脚本
 
-本目录包含 Product-OS 项目的辅助工具脚本。
+## clean_workspace.sh
 
----
+清除工作区，删除所有工作文件（不可恢复）。
 
-## 📋 可用脚本
+### 用法
 
-### clean_workspace.sh
+```bash
+./scripts/clean_workspace.sh
+```
 
-**功能**：清理工作区临时文件和缓存。
+### 会删除的内容
 
----
+- `01_Input/` 中的所有文件（保留 `.keep`）
+- `02_Process/` 中的所有文件（保留 `.keep`）
+- `03_Output/` 中的所有文件（保留 `.keep`）
+- `_WORK_SHEET.md`
 
-## 📚 相关文档
+### 使用场景
 
-- `.cursor/skills/Core_Flow/01-需求拆解.md` - 需求拆解技能说明
-- `.cursorrules` - Product-OS 全局工作规则
-
----
-
-## 📝 版本历史
-
-- **v1.1** (2026-01-28)
-  - 移除 PDF 预处理相关脚本
-  - 简化工具链
+- 处理完一个需求后，清除工作区，开始处理下一个
+- 重新开始，放弃当前的整理结果
