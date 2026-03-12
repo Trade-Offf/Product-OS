@@ -1,0 +1,30 @@
+# Product-OS 工作区生成文件
+_WORK_SHEET.md
+
+# 01_Input 用户粘贴内容（每次使用不同）
+01_Input/Context.md
+
+# 03_Output 生成的 PRD 文档和图片
+03_Output/*
+!03_Output/.keep
+
+# 02_Process 中间产物
+02_Process/*
+!02_Process/.keep
+
+# 01_Input 中的图片资源
+01_Input/*.png
+01_Input/*.PNG
+01_Input/*.jpg
+01_Input/*.jpeg
+01_Input/*.gif
+01_Input/*.webp
+
+# 根目录临时生成的文档（若 PRD 生成在根目录）
+*PRD*.md
+*.png
+*.PNG
+
+# 例外：.cursor/skills 下的技能文件需纳入版本管理（不被 *PRD*.md 忽略）
+!.cursor/skills/Core_Flow/02-PRD生成.md
+!.cursor/skills/Core_Flow/03-PRD精简.md

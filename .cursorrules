@@ -48,6 +48,7 @@
 |--------|---------|------|------|
 | "整理"、"整理一下" | `.cursor/skills/Core_Flow/01-需求整理.md` | `01_Input/*.pdf` | `_WORK_SHEET.md` |
 | "生成文档"、"生成PRD" | `.cursor/skills/Core_Flow/02-PRD生成.md` | `_WORK_SHEET.md` | `03_Output/PRD_*.md` |
+| "精简一下"、"精简PRD"、"出精简版" | `.cursor/skills/Core_Flow/03-PRD精简.md` | `03_Output/PRD_*.md` | `03_Output/PRD_*_light.md` |
 
 ### 执行流程
 1. **识别触发词**: 匹配用户输入与上表中的触发词
