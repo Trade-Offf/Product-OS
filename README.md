@@ -425,10 +425,12 @@ Product-OS/
 │
 ├── 📁 .cursor/
 │   └── skills/
-│       └── Core_Flow/
-│           ├── 01-需求整理.md      → 整理技能
-│           ├── 02-PRD生成.md       → 生成技能
-│           └── 03-PRD精简.md      → 精简技能（可选）
+│       ├── Core_Flow/              → 核心流程
+│       │   ├── 01-需求整理.md
+│       │   ├── 02-PRD生成.md
+│       │   └── 03-PRD精简.md
+│       ├── Frontend_Design/        → 构建前端界面（网页/组件/落地页）
+│       └── Mermaid_Expert/         → PRD 流程图规范
 │
 ├── 📁 docs/
 │   └── templates/
@@ -450,6 +452,17 @@ Product-OS/
 ├── _WORK_SHEET.md                 → 需求工作台（整理后产出）
 └── README.md
 ```
+
+---
+
+## 扩展技能
+
+| 技能 | 用途 |
+|------|------|
+| **Frontend_Design** | 构建高质量前端界面（网页、组件、落地页、仪表盘） |
+| **Mermaid_Expert** | PRD 中的流程图规范 |
+
+技能放在 `.cursor/skills/` 下，按需添加。**Frontend_Design** 触发词：「帮我做一个 xxx 页面」「美化这个组件」「做一个落地页」等。
 
 ---
 
