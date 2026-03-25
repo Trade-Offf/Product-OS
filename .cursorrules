@@ -121,12 +121,13 @@ _WORK_SHEET.md                      → 项目根目录（工作台，唯一）
 
 ### 扩展技能映射（快速执行）
 
-当 `.cursor/skills/Frontend_Design/` 或 `.cursor/skills/Mermaid_Expert/` 存在时，以下触发词生效：
+当 `.cursor/skills/Frontend_Design/`、`.cursor/skills/Mermaid_Expert/` 或 `.cursor/skills/Wireframe_To_Prototype/` 存在时，以下触发词生效：
 
 | 触发词 | 技能文件 | 行为 |
 |--------|---------|------|
 | "做页面"、"做落地页"、"做组件"、"美化"、"做一个 xxx" | `.cursor/skills/Frontend_Design/SKILL.md` | 读取技能 → 按指引生成前端代码 |
 | "画流程图"、"画时序图"、"画 Mermaid"、"画 ER 图"、"画甘特图" | `.cursor/skills/Mermaid_Expert/SKILL.md` | 读取技能 → 按指引生成 Mermaid 图 |
+| "线框图转原型"、"转成原型图"、"高保真原型"、"按线框还原页面"、"根据线框做页面" | `.cursor/skills/Wireframe_To_Prototype/SKILL.md` | 读取技能 → 按线框结构生成原型页面 |
 
 **执行流程**：与核心技能相同，识别触发词 → 读取技能文件 → 按技能指引执行。
 
