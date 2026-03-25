@@ -19,6 +19,7 @@ Turn a rough wireframe into a realistic prototype while preserving the original 
 - 默认输出可预览的前端原型
 - 若生成独立 HTML，入口文件必须命名为 `index.html`
 - 原型以“结构忠实”为第一优先级，其次才是视觉 refinement
+- 若用户未指定风格，默认采用 **Ant Design 风格的后台管理视觉语言**
 
 ## Core Principle
 
@@ -60,10 +61,23 @@ This skill is a translator, not a feature designer.
 
 视觉方向可以精致，但必须服务于线框本身：
 
+- 默认风格：优先采用 **Ant Design 风格**
 - 后台管理：干净、克制、清晰，优先表单可读性
 - 弹窗：突出标题、操作按钮、信息密度与层次
 - 表单：标签对齐、输入区统一、错误态和说明位留白合理
 - 不要为了“设计感”打乱字段顺序或改布局
+
+### Ant Design Style Defaults
+
+当用户没有额外指定视觉方向时，默认按以下方式执行：
+
+- 使用接近 Ant Design 的后台页面层级与留白
+- 表单、详情页、弹窗、按钮、标签、状态色遵循常见 antd 管理台习惯
+- 整体风格偏理性、稳定、可读，不做营销页式的强装饰
+- 优先保证信息密度、对齐关系、操作区清晰度
+- 可以借鉴 antd 的控件观感，但不要为了“像组件库”而引入无关功能
+
+如果用户明确要求其他风格，例如极简、品牌化、深色交易风，则以用户要求为准。
 
 如果项目中同时存在 `Frontend_Design` 技能，可借用其审美标准，但本技能优先级更高的是 **线框保真度**。
 
@@ -91,7 +105,7 @@ This skill is a translator, not a feature designer.
 
 用户如果只贴了线框图，默认按下面目标执行：
 
-“把这段线框图转成高保真原型，不新增功能，只做视觉还原。”
+“把这段线框图转成高保真原型，不新增功能，只做视觉还原。默认采用 Ant Design 风格的后台管理视觉语言。”
 
 ## Additional Resources
 
