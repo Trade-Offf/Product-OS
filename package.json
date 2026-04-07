@@ -1,0 +1,17 @@
+{
+  "name": "product-os",
+  "version": "1.0.0",
+  "description": "你丢需求，AI 帮你整理成 PRD。",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs": "docmd dev",
+    "docs:build": "docmd build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@docmd/core": "^0.6.7"
+  }
+}
